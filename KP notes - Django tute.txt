@@ -1,0 +1,35 @@
+*** Up to - 27 min into video 5 (DBs and Migrations) *****************
+
+
+
+30-04-19
+Working through this Django tutorial playlist (10 hrs) by Corey Schafer: https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p
+
+
+
+For this tute, I created a virtual environment in the Environments dir called project1_env (AS OF 23-JUN TRYING THIS AGAIN ON NEW PC, USED PROJECT2)
+I've already installed Django into this virtual env
+When I want to work on the project, open cmd prompt, navigate to that dir, go into scripts dir and type 'activate'
+when finished, type 'deactivate'
+to run the server, 'python manage.py runserver'
+
+Files for the project are not stored within the environment, which should only be used for packages/libraries.
+Files live in the django_project dir within github local repos. Open this project in PyCharm using the virtual env (should be in the project config already)
+
+To view the site, open Chrome and go to 'http://localhost:8000', bookmarked as 'Django local server'
+
+Login with kageanrage / kjpass123
+or TestUser / kjpass123
+
+
+
+
+
+
+
+Notes
+in Django ORM, represent db structure as classes - these classes are called models
+each class is going to be its own table in the db
+each attribute within the class will be a different field in the db
+
+To load django shell, command is 'python manage.py shell'
