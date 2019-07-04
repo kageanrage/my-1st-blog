@@ -1,26 +1,45 @@
-*** Up to - 27 min into video 5 (DBs and Migrations) *****************
+04-07-19
+Working through Django Girls tutorial - https://tutorial.djangogirls.org/en/
 
-
-
-30-04-19
-Working through this Django tutorial playlist (10 hrs) by Corey Schafer: https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p
-
-
-
-For this tute, I created a virtual environment in the Environments dir called project1_env (AS OF 23-JUN TRYING THIS AGAIN ON NEW PC, USED PROJECT2)
+I created a virtual environment in the Environments dir called django_env
 I've already installed Django into this virtual env
 When I want to work on the project, open cmd prompt, navigate to that dir, go into scripts dir and type 'activate'
 when finished, type 'deactivate'
-to run the server, 'python manage.py runserver'
+
+to run the server, navigate to this django project directory and type 'python manage.py runserver'
 
 Files for the project are not stored within the environment, which should only be used for packages/libraries.
 Files live in the django_project dir within github local repos. Open this project in PyCharm using the virtual env (should be in the project config already)
 
-To view the site, open Chrome and go to 'http://localhost:8000', bookmarked as 'Django local server'
+To view the site, open Chrome and go to 'http://localhost:8000', bookmarked in Chrome as 'Django local server'
 
-Login with kageanrage / kjpass123
-or TestUser / kjpass123
 
+Deployment:
+
+First, push your code to GitHub
+
+(Windows command-line)
+$ git status
+[...]
+$ git add --all .
+$ git status
+[...]
+$ git commit -m "Insert commentary here pertaining to commit"
+[...]
+$ git push
+
+Then, log back in to PythonAnywhere and go to your Bash console (or start a new one), and run:
+
+(PythonAnywhere command-line)
+$ cd <your-pythonanywhere-domain>.pythonanywhere.com
+$ git pull
+[...]
+
+(Remember to substitute <your-pythonanywhere-domain> with your actual PythonAnywhere subdomain, without the angle-brackets.)
+
+Finally, hop on over to the "Web" page and hit Reload on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) 
+Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. 
+The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
 
 
@@ -33,3 +52,6 @@ each class is going to be its own table in the db
 each attribute within the class will be a different field in the db
 
 To load django shell, command is 'python manage.py shell'
+
+
+
